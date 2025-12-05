@@ -5,36 +5,24 @@
     <meta name="description" content="Form For Applying to Jobs">
     <meta name="author" content="Ramy AlCheikh Ali">
     <meta name="keywords" content="HTML, Menu, Jobs, About, Doctype, Head, Body,">
-    <link rel = "stylesheet" href = "styles.css">
+    <link rel = "stylesheet" href = "styles/styles.css">
     <title>Job Application Form</title>
 </head>
 <body>
 <header>
     <img src="images/logo.png" height="120" alt="ORA Technologies Logo">
-    <h1>ORA Technologies</h1>
+    <h1>ORA TECHNOLOGIES</h1>
 
     <nav>
-        <p class = "menu"><a href = "index.html">home</a></p>
-        <p class = "menu"><a href = "jobs.html">jobs</a></p>
-        <p class = "menu"><a href = "apply.html">apply</a></p>
-        <p class = "menu"><a href = "about.html">about us</a></p>
+        <p class = "menu"><a href = "index.html">Home</a></p>
+        <p class = "menu"><a href = "jobs.html">Jobs</a></p>
+        <p class = "menu"><a href = "apply.html">Apply</a></p>
+        <p class = "menu"><a href = "about.html">About Us</a></p>
         <p id = "email"><a href = "mailto.info@companyname.com">info@oratechnologies.com</a></p>
     </nav>
 </header>
     
  <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
-        <fieldset>
-
-            <p>
-                <label for="job_reference_number">Job Reference Number</label>
-                <select id="job_reference_number" name="job_reference_number" required>
-                    <option value="">Please Select</option>
-                    <option value="data_analyst">G03</option>
-                    <option value="soc_analyst">G07</option>
-                </select>
-            </p>
-        
-        </fieldset> 
 
         <fieldset> 
 
@@ -62,9 +50,23 @@
 
                 <input type = "radio" id = "female" name = "female" value = "female">
                 <label for = "female"> Female</label>
+        
             </p>
         </fieldset>
+            <p> 
+                <br>
+                <label for = "email_address"> Email Address</label>
+                <input type = "email" id = "email_address" name = "email_address" pattern = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title = "Please enter a valid email address (e.g., user@example.com)" required>
+                <br><br>
 
+                <label for = "phone_number"> Phone Number</label>
+                <input type = "tel" id = phone_number name = "phone_number" pattern = "^[\d\s]{8,12}$" title = "Phone number must be 8 to 12 digits or spaces." required>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend> Address</legend>
+            
             <p>
                 <label for = "unit_number"> Unit Number</label>
                 <input type = "text" id = "unit_number" name = "unit_number" maxlength = "5" required>
@@ -88,23 +90,26 @@
 
                 <label for = "city"> City</label>
                 <input type = "text" id = "city" name = "city" maxlength = "40" required>
-                <br><br>
-
-                <label for = "email_address"> Email Address</label>
-                <input type = "email" id = "email_address" name = "email_address" pattern = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title = "Please enter a valid email address (e.g., user@example.com)" required>
-                <br><br>
-
-                <label for = "phone_number"> Phone Number</label>
-                <input type = "tel" id = phone_number name = "phone_number" pattern = "^[\d\s]{8,12}$" title = "Phone number must be 8 to 12 digits or spaces." required>
-            </p>
         </fieldset>
+        <br>
+        <fieldset>
+            <legend>Job Details</legend>
+
+            <p>
+                <label for="job_reference_number">Job Reference Number</label>
+                <select id="job_reference_number" name="job_reference_number" required>
+                    <option value="">Please Select</option>
+                    <option value="data_analyst">G03</option>
+                    <option value="soc_analyst">G07</option>
+                </select>
+            </p>
 
         <h3> Required Technical List</h3>
 
         <fieldset>
             <legend> Data Analyst</legend>
             <p>
-                <input type = "checkbox" id = "sql" name = "data_analyst" value = "SQL" checked>
+                <input type = "checkbox" id = "sql" name = "data_analyst" value = "SQL" >
                 <label for = "sql"> SQL</label>
 
                 <input type = "checkbox" id = "excel" name = "data_analyst" value = "Advanced Excel">
@@ -124,7 +129,7 @@
         <fieldset>
             <legend> SOC Analyst</legend>
             <p>
-                <input type = "checkbox" id = "siem" name = "soc_analyst" value = "SIEM Tools (Splunk, Sentinel, QRadar)" checked>
+                <input type = "checkbox" id = "siem" name = "soc_analyst" value = "SIEM Tools (Splunk, Sentinel, QRadar)">
                 <label for = "siem"> SIEM Tools (Splunk, Sentinel, QRadar)</label>
 
                 <input type = "checkbox" id = "network" name = "soc_analyst" value = "Network Security Fundamentals">
@@ -144,17 +149,55 @@
 
         <br>
 
-        <fieldset>
-
-                <legend> Other Skills</legend>
-                <textarea id = "other_skills" name = "other_skills" rows = "4" cols = "50" placeholder = "Write your other skills (if you have any) here..."></textarea>
+            <p> Other Skills</p>
+            <textarea id = "other_skills" name = "other_skills" rows = "4" cols = "50" placeholder = "Write your other skills (if you have any) here..."></textarea>
 
         </fieldset>
-
         <p>
             <input type="submit" value="Submit">
             <input type="reset" value="Reset Application">
         </p>
     </form>
+
+    <footer class="footer">
+
+    <aside class="about-ora">
+        <h2 class="about-title">About ORA Technologies</h2>
+        <p class="about-text">
+            ORA Technologies is an Australian IT and cybersecurity company providing
+            advanced technology solutions including SOC operations founded in 1992, data analytics,
+            cloud infrastructure, and managed IT services. The company's main headquarters
+            is located in Australia, with expanding operations in the Middle East,
+            including Qatar (founded 2022).
+        </p>
+        <ul class="about-list">
+            <li>Headquarters: Australia — Founded 1992</li>
+            <li>Qatar Office: Doha, Qatar — Founded 2022</li>
+            <li>Services: Cybersecurity, SOC Monitoring, Data Analytics, Cloud IT</li>
+        </ul>
+    </aside>
+
+    <div class="contact-info">
+        <p>Contact us</p>
+        <a href="mailto:info@ORAtechnologies.com">info@ORAtechnologies.com</a>
+        <p>+974 3097 2029</p>
+        <p>Address: Nr World Trade Centre, A Ring Rd, Doha</p>
+    </div>
+
+    <div class="navigation">
+        <p>quick navigation</p>
+        <a href="jobs.html">Job Description</a>
+        <a href="apply.html">apply for a job!</a>
+        <a href="about.html">about us</a>
+    </div>
+    <div class="Extra-info">
+        <a href="">Legal</a>
+        <a href="">Terms of Use</a>
+        <a href="">Privacy Policy</a>
+        <a href="">FAQ</a>
+        <p>&copy; 2025 ORA Technologies. all rights reserved.</p>
+    </div>
+    </footer>
+
 </body>
 </html>
