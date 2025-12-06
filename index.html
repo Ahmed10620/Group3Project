@@ -7,23 +7,30 @@
         <meta name="author" content="Ahmed Abdelmaksoud">
         <!--meta tags for additional info-->
         <link rel="stylesheet" href="styles/styles.css">
+        
         <!--Linking style css file to apply the styles-->
+        <title>Home &middot; ORA technologies</title>
     </head>
     <body>
-        <title>Home &middot; ORA technologies</title>
+        
        <!--header to display logo, company name and menu-->
-        <header>
-            <img src="images/logo.jpg" alt="ORA technologies" height="120">
-            <p ><a href="mailto:info@companyname.com">email us</a></p>
+        <header >
+            <div class="top-row">
+                <img src="images/logo.jpg" alt="ORA technologies" class="logo">
+                
+            </div>
 
 
 
 
-            <nav>
-                <p class="menu"><a href="index.html">home</a></p>
-                <p class="menu"><a href="jobs.html">jobs</a></p>
-                <p class="menu"><a href="apply.html">apply</a></p>
-                <p class="menu"><a href="about.html">about us</a></p>
+            <nav class="menu-nav">
+                <div class="menu">
+                    <p class="gradient-text"><a href="index.html">Home</a></p>
+                    <p class="gradient-text"><a href="jobs.html">Jobs</a></p>
+                    <p class="gradient-text"><a href="apply.html">Apply</a></p>
+                    <p class="gradient-text"><a href="about.html">About us</a></p>
+                </div>
+                <p class="gradient-text email"><a href="mailto:info@companyname.com">Email us</a></p>
             </nav>
         </header>
 
@@ -73,30 +80,26 @@
 
 
         <section id="career-opportunities">
-            <h2>Career Opportunities</h2>
-                <p>
-                    ORA Technologies is growing rapidly in the Middle East, and we are always 
-                    looking for talented individuals to join our Qatar operations. From 
-                    cybersecurity specialists to data analysts, we offer opportunities to 
-                    work with advanced technologies and an international team.
-                </p>
+                <h2>Career Opportunities</h2>
+                <div id="jobs">
 
-                <h3>Current Open Roles</h3>
-                <ul class="no-style-list">
-                    <li>
+                
+                
+                <aside class="jobs-aside">
                         <strong>SOC Analyst</strong><br>
                         Monitor security environments, analyse threats, and support SOC operations across regional clients.
-                    </li>
-                    <li>
+                        <a class="learn-button" href="jobs.html"><span>Learn More</span></a>
+                </aside>  
+                <aside class="jobs-aside">    
                         <strong>Data Analyst</strong><br>
                         Analyse business data, build intelligence dashboards, and support decision-making for teams in Qatar and Australia.
-                    </li>
-                </ul>
+                        <a class="learn-button" href="jobs.html"><span>Learn More</span></a>
+                </aside>
+                
+                </div>
+               
 
-                <p>
-                    More roles will be added as we continue expanding our Qatar branch.  
-                    Join us and help build the future of secure and intelligent technology solutions.
-                </p>
+                
         </section>
 
 
@@ -108,9 +111,25 @@
 
          -->
         <footer>
+            <aside class="about-ora">
+        <h2 class="about-title">About ORA Technologies</h2>
+        <p class="about-text">
+            ORA Technologies is an Australian IT and cybersecurity company providing
+            advanced technology solutions including SOC operations founded in 1992, data analytics,
+            cloud infrastructure, and managed IT services. The company's main headquarters
+            is located in Australia, with expanding operations in the Middle East,
+            including Qatar (founded 2022).
+        </p>
+        <ul class="about-list">
+            <li>Headquarters: Australia — Founded 1992</li>
+            <li>Qatar Office: Doha, Qatar — Founded 2022</li>
+            <li>Services: Cybersecurity, SOC Monitoring, Data Analytics, Cloud IT</li>
+        </ul>
+    </aside>
 
             <div class="contact-info">
                 <p>Contact us</p>
+                <hr>
                 <a href="mailto:info@ORAtechnologies.com">info@ORAtechnologies.com</a>
                 <p>+974 3097 2029</p>
                 <p>Address: Nr World Trade Centre, A Ring Rd, Doha</p>
@@ -118,10 +137,12 @@
             
             
             <div class="navigation">
-            <p>quick navigation</p>
-            <a href="jobs.html">Job Description</a>
-            <a href="apply.html">apply for a job!</a>
-            <a href="about.html">about us</a>
+                <p>quick navigation</p>
+                <hr>
+                <a class="quicknav" href="index.html">Home</a>
+                <a class="quicknav" href="jobs.html">Job Description</a>
+                <a class="quicknav" href="apply.html">Apply for a job</a>
+                <a class="quicknav" href="about.html">About us</a>
             </div>
             
             <div class="Extra-info">
@@ -131,6 +152,8 @@
             <p>
                 &copy; 2025 company name. all rights reserved.
             </p>
+            <a href="">view our jira project</a>
+            <a href="">view github repository</a>
             </div>
         </footer>
 
