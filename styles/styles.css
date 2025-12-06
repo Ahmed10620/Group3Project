@@ -156,6 +156,8 @@ footer hr {
     background-color: rgba(255, 255, 255, 0.3);
     margin-bottom: 1rem;
     width: 100px;
+    margin-left: 0; 
+    margin-right: auto;
 }
 
 
@@ -199,6 +201,302 @@ footer a:hover {
     font-size: 0.9rem;
 }
 
+/*index.html css*/
+
+/*hero css*/
+.hero-image {
+    background: linear-gradient(rgba(64, 14, 13, 0.8), rgba(64, 14, 13, 0.7)), url('images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.hero-text {
+   
+    padding: 3rem;
+    border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#hero-badge {
+    display: inline-block;
+    background-color: #400E0D;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.hero-text a {
+    display: inline-block;
+    background-color: white;
+    color: #400E0D;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero-text a:hover {
+    transform: translateY(-3px);
+}
+
+/*css for into and values*/
+.intro, .values, #career-opportunities {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 20px;
+}
+
+.intro h2, .values h2, #career-opportunities h2 {
+    color: #400E0D;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.value-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.value-list li {
+    background-color: #f8f8f8;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #400E0D;
+    border-radius: 4px;
+}
+
+.value-list strong {
+    color: #400E0D;
+}
+
+/*career opporunities and jobs css*/
+
+#career-opportunities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#career-opportunities > h2 {
+    width: 100%;
+}
+
+#jobs {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.jobs-aside {
+    background-color: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1;
+    max-width: 500px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.jobs-aside:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.jobs-aside strong {
+    color: #400E0D;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.jobs-aside br {
+    margin-bottom: 1.5rem;
+    display: block;
+    content: "";
+}
+
+.job-content {
+    margin-bottom: 1.5rem;
+}
+
+/*button css*/
+.learn-button {
+    display: inline-block;
+    background-color: #400E0D;
+    color: white;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+    border: 2px solid #400E0D;
+    margin-top: auto;
+}
+
+.learn-button:hover {
+    background-color: #400E0D;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(64, 14, 13, 0.2);
+}
+
+.learn-button:hover span {
+    background-image: linear-gradient(
+        90deg,
+        #FF7A3D 0%,
+        #FFB649 35%,
+        #FFD16A 60%,
+        #dd5472be 100%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientFlow 2.8s linear infinite;
+}
+
+/* end of index.html css*/
+
+/* start of jobs.html css*/
+
+.job-section {
+    background-color: white;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #FF7A3D 0%, #FFB649 35%, #FFD16A 60%, #dd5472be 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    background-clip: text; 
+    color: #FF6EC7; 
+    font-weight: bold;
+}
+
+.job-title {
+    color: #400E0D;
+    border-left: 4px solid #400E0D;
+    padding-left: 10px;
+}
+
+.subheading {
+    margin-top: 20px;
+    color: #333;
+}
+
+.responsibilities-list,
+.essential-list,
+.preferable-list {
+    padding-left: 25px;
+}
+
+.about-ora {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.about-ora ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-ora li::before {
+    content: "• ";
+    color: #400E0D;
+}
+
+
+.apply-container {
+    text-align: right; 
+    margin-top: 20px;
+}
+
+.apply-button {
+    background-color: #400E0D;
+    border: 2px solid #400E0D;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+    overflow: hidden;
+}
+
+.apply-button span {
+    color: white;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.apply-button:hover {
+    transform: scale(1.05);
+}
+
+.apply-button:hover span {
+    background-image: linear-gradient(
+        90deg,
+        #FF7A3D 0%,
+        #FFB649 35%,
+        #FFD16A 60%,
+        #dd5472be 100%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientFlow 2.8s linear infinite;
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}
+
+/* end of jobs.html css*/
 
 /* apply.html css */
 body {
