@@ -1,33 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Jobs &middot; ORA Technologies</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-
-<body class="body">
-
-<header >
-                <div class="top-row">
-                    <img src="images/logo.jpg" alt="ORA technologies" class="logo">
-
-                </div>
-
-
-
-
-                <nav class="menu-nav">
-                    <div class="menu">
-                        <p class="gradient-text"><a href="index.html">Home</a></p>
-                        <p class="gradient-text"><a href="jobs.html">Jobs</a></p>
-                        <p class="gradient-text"><a href="apply.html">Apply</a></p>
-                        <p class="gradient-text"><a href="about.html">About us</a></p>
-                    </div>
-                    <p class="gradient-text email"><a href="mailto:info@ORAtechnologies.com">Email us</a></p>
-                </nav>
-            </header>
+<?php
+    $pageTitle = "Home · ORA technologies";
+    $pageDescription = "Home page";
+    include 'header.inc';
+?>
 
 <main class="main-content">
 
@@ -145,55 +120,7 @@
 
 </main>
 
-<footer>
-                <aside class="about-ora">
-            <h2 class="about-title">About ORA Technologies</h2>
-            <p class="about-text">
-                ORA Technologies is an Australian IT and cybersecurity company providing
-                advanced technology solutions including SOC operations founded in 1992, data analytics,
-                cloud infrastructure, and managed IT services. The company's main headquarters
-                is located in Australia, with expanding operations in the Middle East,
-                including Qatar (founded 2022).
-            </p>
-            <ul class="about-list">
-                <li>Headquarters: Australia — Founded 1992</li>
-                <li>Qatar Office: Doha, Qatar — Founded 2022</li>
-                <li>Services: Cybersecurity, SOC Monitoring, Data Analytics, Cloud IT</li>
-            </ul>
-        </aside>
-
-                <div class="contact-info">
-                    <p>Contact us</p>
-                    <hr>
-                    <a href="mailto:info@ORAtechnologies.com">info@ORAtechnologies.com</a>
-                    <p>+974 3097 2029</p>
-                    <p>Address: Nr World Trade Centre, A Ring Rd, Doha</p>
-                </div>
-                
-                
-                <div class="navigation">
-                    <p>Quick Navigation</p>
-                    <hr>
-                    <a class="quicknav" href="index.html">Home</a>
-                    <a class="quicknav" href="jobs.html">Job Description</a>
-                    <a class="quicknav" href="apply.html">Apply for a job</a>
-                    <a class="quicknav" href="about.html">About us</a>
-                </div>
-                
-                <div class="Extra-info">
-                <a href="">Legal</a>
-                <a href="">Terms of Use</a>
-                <a href="">Privacy Policy</a>
-                <p>
-                    &copy; 2025 ORA Technologies. All Rights Reserved.
-                </p>
-                <a href="https://ralcheikhali.atlassian.net/jira/software/projects/ORA/summary?atlOrigin=eyJpIjoiOTNmYThhZjgzNDM2NDc1ZWEyYWZhNWUwNzM5N2Q2ZWQiLCJwIjoiaiJ9">View our Jira project</a>
-                <a href="https://github.com/Ahmed10620/Group3Project.git">View Github repository</a>
-                </div>
-            </footer>
-            
-</body>
-</html>
+<?php include 'footer.inc' ?>
 
 <!-- GENAI USAGE: This content was generated with assistance from ChatGPT based on the prompt: 
 "How do I add these references as comments in HTML after each code for the job description? 
